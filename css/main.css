@@ -29,6 +29,34 @@
 /* -------------- */
 
 
+
+/* Login and Register Page CSS */
+.dark-dirt-bg {
+    background-image: url("../images/dark_dirt_bg.png");
+}
+
+.grass-block {
+    display: flex;
+    background-image: url("../images/grass_block.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+  }
+
+.white-text {
+    color: white;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+/* -------------- */
+
 .test {
     color: white;
     font-size: 50px;
