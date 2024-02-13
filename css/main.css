@@ -1,0 +1,36 @@
+/* Setting up Minecraft font */
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/minecraft.ttf");
+}
+
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/3_Minecraft-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/2_Minecraft-Italic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/4_Minecraft-BoldItalic.otf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+.mc-font { /* Use this to turn any text to minecraft font */
+    font-family: "minecraft";
+}
+/* -------------- */
+
+
+.test {
+    color: white;
+    font-size: 50px;
+    background-color: green;
+}
