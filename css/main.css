@@ -55,6 +55,93 @@
     width: 200px;
 }
 
+
+/* Account Settings Page CSS */
+
+.oak-plank-bg {
+    background-image: url("../images/oak_plank_bg.jpg");
+}
+.account-settings-body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.account-desc{
+    background-color: #099f57 ;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-radius: 20px;
+    
+}
+
+
+
+.avatar-img > img{
+    max-width: 200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.name{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.name > header{
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+}
+
+.desc{
+    background-color: #257b52;
+    width:90%;
+    margin-left: 25px;
+    border-radius: 20px;
+    height:105px;
+}
+.desc > label{
+    padding-left: 15px;
+    padding-top: 5px;
+    color:white;
+}
+
+.view-post{
+    margin-top: 10px;
+    margin-left: 80%;
+    margin-bottom: 5px;
+}
+
+.username{
+   margin-top: 5px;
+}
+
+.username > label{
+    color: white;
+    
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+.bio > label{
+    color:white
+}
+ /* end of Account Settings Page CSS */
+
 /* -------------- */
 
 .test {
