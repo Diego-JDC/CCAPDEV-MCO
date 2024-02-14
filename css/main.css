@@ -164,4 +164,34 @@
     background-repeat: repeat;
 }
 
+.pfp {
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+.pfp-l {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.post-sizing {
+    max-width: 900px;
+    
+}
+
+.top-spacer {
+    margin-top: 5%;
+}
+
+.dia-color {
+
+}
+
+.iron-color {
+
+}
+
+.gold-color {
+
+}
 /* -------------- */
