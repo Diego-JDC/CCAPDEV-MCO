@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body class="dark-oak-bg">
+        <nav class="mc-font stone-brick-bg p-2 navbar navbar-expand-sm bg-success fixed-top">
+            <div class="container-fluid justify-content-start">
+                <a class="fs-4 p-2 btn btn-success text-white " href="../html/index.html">
+                    <i class="bi bi-house"></i>
+                    <b>Home</b>
+                </a>
+            </div>
+            <div class="container-fluid justify-content-center">
+                <form class="d-flex m-2" action="">
+                    <input class="form-control me-2 w-100" type="search" placeholder="Search forums" aria-label="Search">
+                    <button class="btn btn-success btn-sm" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="container-fluid justify-content-end">
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="pfp me-2" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"/>
+                        Diego
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../html/account.html"><i class="bi bi-person-fill me-3"></i>Profile</a></li>
+                        <li><a class="dropdown-item text-danger" href="../html/login.html"><i class="bi bi-box-arrow-right me-3"></i>Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mc-font top-spacer d-flex justify-content-center">
+            <div class="flex-column bg-success rounded-5">
+                <div class="d-flex flex-column ">
+                    <div class="avatar-img mx-auto">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
+                    </div>
+                    <div class="mx-auto">
+                        <a href="#" class="btn btn-primary btn-sm text-center">Change Profile Picture</a>
+
+                    </div>
+
+                </div>
+                <div class="p-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username" value="Diego">
+                        <label for="floatingInputGroup1">Username</label>
+                    </div>
+                </div>                   
+                <div class = "text-white px-3">
+                    <textarea rows="4" cols="50">Professional Minecraft Hater. No, I'm not trolling!! I really don't like Minecraft!!!</textarea>
+                </div>
+                <div class="d-flex justify-content-end my-auto mt-2 me-2">
+                    <form action="../html/account_edit.html">
+                        <input class="btn btn-primary mx-2" type="submit" value="Save Changes">
+                    </form>
+                </div>
+                </div>
+                <table>
+                    <tr></tr>
+                    <tr></tr>
+                </table>
+                
+            </div>
+        </div>
+    </body>
+</html>

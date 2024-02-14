@@ -68,15 +68,17 @@
     align-items: center;
 }
 .account-desc{
-    background-color: #099f57 ;
+    background-color: #0f6c3f ;
     display:flex;
     flex-direction: row;
     justify-content: center;
 
     border-radius: 20px;
-    
+    max-width: 900px;
 }
-
+.dark-green-bg {
+    background-color: #0f6c3f ;
+}
 
 
 .avatar-img > img{
@@ -110,7 +112,7 @@
     width:90%;
     margin-left: 25px;
     border-radius: 20px;
-    height:105px;
+    height:100%;
 }
 .desc > label{
     padding-left: 15px;
@@ -139,6 +141,13 @@
 }
 .bio > label{
     color:white
+}
+
+.dark-oak-bg {
+    background-size: 5em;
+    background-image: url("../images/dark_oak_plank.png");
+    background-repeat: repeat;
+    height: 100em;
 }
  /* end of Account Settings Page CSS */
 
@@ -183,15 +192,4 @@
     margin-top: 5%;
 }
 
-.dia-color {
-
-}
-
-.iron-color {
-
-}
-
-.gold-color {
-
-}
 /* -------------- */
