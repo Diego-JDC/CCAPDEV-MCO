@@ -62,7 +62,14 @@
     background-color: rgba(10, 9, 9, 0.3);
     
 }
+.slink {
+    transform: rotate(0);
+}
 
+.pfp-comment{
+    max-width: 50px;
+    border-radius: 50%;
+}
 .oak-plank-bg {
     background-image: url("../images/oak_plank_bg.jpg");
 }
