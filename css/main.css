@@ -239,4 +239,19 @@
     margin-top: 5%;
 }
 
+.slink {
+    transform: rotate(0);
+}
+
+/* -------------- */
+
+
+
+/* Post page CSS */
+
+.pfp-comment {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
 /* -------------- */
