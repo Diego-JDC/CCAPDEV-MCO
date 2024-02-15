@@ -153,43 +153,9 @@
 
 /* -------------- */
 
-/* Home Page CSS */
+/* start of Post Page CSS */
 .test {
     color: white;
     font-size: 50px;
     background-color: green;
 }
-
-.polished-blackstone-bg {
-    background-size: 5em;
-    background-image: url("../images/polished_blackstone_brick.png");
-    background-repeat: repeat;
-    height: 100em;
-}
-
-.stone-brick-bg {
-    background-size: 5em;
-    background-image: url("../images/stone_brick.png");
-    background-repeat: repeat;
-}
-
-.pfp {
-    max-width: 30px;
-    border-radius: 50%;
-}
-
-.pfp-l {
-    max-width: 100px;
-    border-radius: 50%;
-}
-
-.post-sizing {
-    max-width: 900px;
-    
-}
-
-.top-spacer {
-    margin-top: 5%;
-}
-
-/* -------------- */
