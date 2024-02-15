@@ -187,7 +187,12 @@
    
     
 }
-
+.sign {
+    display: flex;
+    flex-direction: column;
+    background-size: 5em;
+    background-image: url("../images/signtest.png");
+}
 .polished-blackstone-bg {
     background-size: 5em;
     background-image: url("../images/polished_blackstone_brick.png");
