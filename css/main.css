@@ -143,6 +143,15 @@
     color:white
 }
 
+.slink {
+    transform: rotate(0);
+}
+
+.pfp-comment{
+    max-width: 50px;
+    border-radius: 50%;
+}
+
 .dark-oak-bg {
     background-size: 5em;
     background-image: url("../images/dark_oak_plank.png");
