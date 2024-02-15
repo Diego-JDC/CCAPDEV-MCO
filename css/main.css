@@ -159,3 +159,84 @@
     font-size: 50px;
     background-color: green;
 }
+
+.shadow{
+    background-color: rgba(10, 9, 9, 0.5);
+    border-radius: 5px;
+    background-size: 5em;
+    width: 100%;
+    height: 100%; 
+    margin: 80px auto;
+    background: linear-gradient(to right, rgba(10, 9, 9, 0.2) 0%,
+     rgba(10, 9, 9, 0.4) 15%, rgba(10, 9, 9, 0.5) 25%, rgba(10, 9, 9, 0.5) 25%,
+      rgba(10, 9, 9, 0.5) 35%, rgba(10, 9, 9, 0.5) 35%, rgba(10, 9, 9, 0.5) 50%,
+       rgba(10, 9, 9, 0.5) 65%, rgba(10, 9, 9, 0.5) 65%, rgba(10, 9, 9, 0.5) 75%,
+        rgba(10, 9, 9, 0.5) 75%, rgba(10, 9, 9, 0.4) 85%, rgba(10, 9, 9, 0.2) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+
+.polished-blackstone-bg {
+    background-size: 5em;
+    background-image: url("../images/polished_blackstone_brick.png");
+    background-repeat: repeat;
+    height: 100em;
+    
+}
+.gray-concrete-bg {
+    background-size: 5em;
+    background-image: url("../images/Gray_Concrete.png");
+    background-repeat: repeat;
+    height: 95%;
+    padding: 3%;
+    margin: 2%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.light-gray-concrete-bg {
+    background-size: 5em;
+    background-image: url("../images/Light_Gray_Concrete.png");
+    background-repeat: repeat;
+    height: 95%;
+    width:100%;
+    min-width: 30%;
+    padding: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.stone-brick-bg {
+    background-size: 5em;
+    background-image: url("../images/stone_brick.png");
+    background-repeat: repeat;
+}
+
+.pfp {
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+.pfp-l {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.post-sizing {
+    max-width: 900px;
+    
+}
+
+.top-spacer {
+    margin-top: 5%;
+}
+
+/* -------------- */
