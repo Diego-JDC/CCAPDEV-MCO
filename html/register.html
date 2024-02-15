@@ -5,17 +5,18 @@
         <script src="../javascript/main.js"></script>
     </head>
     <body class="dark-dirt-bg">
-        <div class="main_container">
-            <div class="logo"><img class="grass-block" src="../images/grass_block.png" /></div>
-            <h1 class="website_acronym">UMF</h1>
-            <h5 class="website_name">Ultimate Minecraft Forum</h5>  
+        <div class="container d-flex flex-column justify-content-center">
+            <div class="pt-5 d-flex justify-content-center"><img class="w-200" src="../images/grass_block.png" /></div>
+            <h1 class="pl-1 mc-font display-1 text-center text-white">UMF</h1>
+            <h5 class="mc-font text-center text-white">Ultimate Minecraft Forum</h5>  
             
-            <h6 class="page_name"><u>Register</u></h6>
-            <form class="register" action="../html/index.html" id="register">
-                <input type="text" class="username" placeholder="Username">
-                <input type="password" class="password" placeholder="Password" id="password">
-                <input type="password" class="confirm" placeholder="Confirm Password" id="conf-password"><br>
-                <div class="reg_button">
+            <h6 class="mc-font text-white text-center pt-3"><u>Register</u></h6>
+            <form class="d-flex flex-column mx-auto" action="../html/index.html" id="register">
+                <input type="text" class="mt-2" placeholder="Username">
+                <input type="password" class="mt-2" placeholder="Password" id="password">
+                <input type="password" class="mt-2" placeholder="Confirm Password" id="conf-password">
+                <span class="mc-font text-white text-center small p-2"><input class="m-2" type="checkbox" id="passtoggle" onclick="showPass()">Show password</span>
+                <div class="mx-auto pb-2">
                     <input onclick="samePass()" type="submit" class="btn btn-success btn-sm" value="Register">
                 </div>
             </form>
