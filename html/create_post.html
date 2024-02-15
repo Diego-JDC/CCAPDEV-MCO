@@ -6,7 +6,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
-    <body class="dark-oak-bg">
+    <body class="polished-blackstone-bg">
         <nav class="mc-font stone-brick-bg p-2 navbar navbar-expand-sm bg-success fixed-top">
             <div class="container-fluid justify-content-start">
                 <a class="fs-4 p-2 btn btn-success text-white " href="../html/index.html">
@@ -34,38 +34,41 @@
             </div>
         </nav>
 
+
         <div class="mc-font top-spacer d-flex justify-content-center">
+            
             <div class="flex-column bg-success rounded-5">
-                <div class="d-flex flex-column ">
-                    <div class="avatar-img mx-auto">
-                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png">
-                    </div>
-                    <div class="mx-auto">
-                        <a href="#" class="btn btn-primary btn-sm text-center">Change Profile Picture</a>
-
-                    </div>
-
+                <div class="mx-4 mt-3">
+                    <p class="text-white fs-2"><b>Create a Post</b></p>
                 </div>
-                <div class="p-3">
+                <div class="px-3">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username" value="Diego">
-                        <label for="floatingInputGroup1">Username</label>
+                        <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Post Title" value="">
+                        <label for="floatingInputGroup1">Post Title</label>
                     </div>
                 </div>                   
-                <div class = "text-white px-3">
-                    <textarea rows="4" cols="50">Professional Minecraft Hater. No, I'm not trolling!! I really don't like Minecraft!!!</textarea>
+                <div class = "text-white p-3">
+                    <textarea rows="5" cols="75%" placeholder="Post Content"></textarea>
                 </div>
-                <div class="d-flex justify-content-end my-auto mt-2 me-2">
-                    <form action="../html/account.html">
-                        <input class="btn btn-primary border-info mx-2" type="submit" value="Save Changes">
-                    </form>
+                <div class="text-white d-flex flex-row mx-4 mb-3">
+                    <p class="fs-4 my-auto"><b>Tags: </b></p>
+                    <div class="p-1 mx-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Hater</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Advice</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Q&A</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Question</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Creepypasta</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Horror</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Chill</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="button">Cool</button>
+                    </div>
                 </div>
+                <div class="d-flex m-4 justify-content-center">
+                    <div class="d-flex flex-column w-25">
+                        <a href="../html/index.html" class="btn btn-primary border-info">Submit</a>
+                        <a href="../html/index.html" class="btn text-danger">Cancel</a>
+                    </div>
                 </div>
-                <table>
-                    <tr></tr>
-                    <tr></tr>
-                </table>
-                
             </div>
         </div>
     </body>
