@@ -57,7 +57,9 @@
 
 
 /* Account Settings Page CSS */
-
+.input-shadow{
+    background-color: rgba(10, 9, 9, 0.1);
+}
 .input-box{
     background-color: rgba(10, 9, 9, 0.2);
     width:100%;
