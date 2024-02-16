@@ -180,6 +180,13 @@
     background-color: green;
 }
 
+.edit-delete{
+    margin: 10px;
+}
+.edit-delete > img {
+    width: 25px;
+}
+
 .shadow{
     background-color: rgba(10, 9, 9, 0.5);
     border-radius: 5px;
