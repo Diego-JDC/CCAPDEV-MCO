@@ -201,7 +201,7 @@
 .sign {
     display: flex;
     flex-direction: column;
-    background-size: 90%;
+    background-size: 50%;
     background-image: url("../images/signtest.png");
 }
 .polished-blackstone-bg {
