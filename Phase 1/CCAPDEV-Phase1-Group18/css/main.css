@@ -1,0 +1,275 @@
+/* Setting up Minecraft font */
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/minecraft.ttf");
+}
+
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/3_Minecraft-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/2_Minecraft-Italic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "minecraft";
+    src: url("../fonts/minecraft/4_Minecraft-BoldItalic.otf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+.mc-font { /* Use this to turn any text to minecraft font */
+    font-family: "minecraft";
+}
+/* -------------- */
+
+
+
+/* Login and Register Page CSS */
+.dark-dirt-bg {
+    background-image: url("../images/dark_dirt_bg.png");
+}
+
+.grass-block {
+    display: flex;
+    background-image: url("../images/grass_block.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+  }
+
+.white-text {
+    color: white;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+
+/* Account Settings Page CSS */
+.input-shadow{
+    background-color: rgba(10, 9, 9, 0.1);
+}
+.input-box{
+    background-color: rgba(10, 9, 9, 0.2);
+    width:100%;
+    height:40px;
+}
+.input-box-desc{
+    background-color: rgba(10, 9, 9, 0.2);
+    width:100%;
+    height:60px;
+}
+.slink {
+    transform: rotate(0);
+}
+
+.pfp-comment{
+    max-width: 50px;
+    border-radius: 50%;
+}
+.oak-plank-bg {
+    background-image: url("../images/oak_plank_bg.jpg");
+}
+.account-settings-body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.account-desc{
+    background-color: #0f6c3f ;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border-radius: 20px;
+    max-width: 900px;
+}
+.dark-green-bg {
+    background-color: #0f6c3f ;
+}
+
+
+.avatar-img > img{
+    max-width: 200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.name{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.name > header{
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+}
+
+.desc{
+    background-color: #257b52;
+    width:90%;
+    margin-left: 25px;
+    border-radius: 20px;
+    height:100%;
+}
+.desc > label{
+    padding-left: 15px;
+    padding-top: 5px;
+    color:white;
+}
+
+.view-post{
+    margin-top: 10px;
+    margin-left: 80%;
+    margin-bottom: 5px;
+}
+
+.username{
+   margin-top: 5px;
+}
+
+.username > label{
+    color: white;
+    
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+.bio > label{
+    color:white
+}
+
+.dark-oak-bg {
+    background-size: 5em;
+    background-image: url("../images/dark_oak_plank.png");
+    background-repeat: repeat;
+    height: 100em;
+}
+ /* end of Account Settings Page CSS */
+
+/* -------------- */
+
+/* start of Post Page CSS */
+.test {
+    color: white;
+    font-size: 50px;
+    background-color: green;
+}
+
+.edit-delete{
+    margin: 10px;
+}
+.edit-delete > img {
+    width: 25px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.shadow{
+    background-color: rgba(10, 9, 9, 0.5);
+    border-radius: 5px;
+    background-size: 5em;
+    width: 100%;
+    height: 100%; 
+    margin: 80px auto;
+    background: linear-gradient(to right, rgba(10, 9, 9, 0.2) 0%,
+     rgba(10, 9, 9, 0.4) 15%, rgba(10, 9, 9, 0.5) 25%, rgba(10, 9, 9, 0.5) 25%,
+      rgba(10, 9, 9, 0.5) 35%, rgba(10, 9, 9, 0.5) 35%, rgba(10, 9, 9, 0.5) 50%,
+       rgba(10, 9, 9, 0.5) 65%, rgba(10, 9, 9, 0.5) 65%, rgba(10, 9, 9, 0.5) 75%,
+        rgba(10, 9, 9, 0.5) 75%, rgba(10, 9, 9, 0.4) 85%, rgba(10, 9, 9, 0.2) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+.sign {
+    display: flex;
+    flex-direction: column;
+    background-size: 50%;
+    background-image: url("../images/signtest.png");
+}
+.polished-blackstone-bg {
+    background-size: 5em;
+    background-image: url("../images/polished_blackstone_brick.png");
+    background-repeat: repeat;
+    height: 100em;
+    
+}
+.gray-concrete-bg {
+    background-size: 5em;
+    background-image: url("../images/Gray_Concrete.png");
+    background-repeat: repeat;
+    height: 95%;
+    padding: 3%;
+    margin: 2%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.light-gray-concrete-bg {
+    background-size: 5em;
+    background-image: url("../images/Light_Gray_Concrete.png");
+    background-repeat: repeat;
+    height: 95%;
+    width:100%;
+    min-width: 30%;
+    padding: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.stone-brick-bg {
+    background-size: 5em;
+    background-image: url("../images/stone_brick.png");
+    background-repeat: repeat;
+}
+
+.pfp {
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+.pfp-l {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.post-sizing {
+    max-width: 900px;
+    
+}
+
+.top-spacer {
+    margin-top: 5%;
+}
+
+/* -------------- */
