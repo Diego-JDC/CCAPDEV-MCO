@@ -30,3 +30,15 @@ function samePass() { //checks if password and confirm password are the same
         nextPage.setAttribute("action", "../html/index.html");
     }
 }
+
+function hide() {
+    var del = document.getElementById("delete");
+    del.style.display = 'inline-block';
+    return true;
+}
+
+function show() {
+    var del = document.getElementById("delete");
+    del.style.display = 'none';
+    return true;
+}

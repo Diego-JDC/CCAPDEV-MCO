@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "65e821b3c2ac7b2daadc91a7"
+  },
+  "id": 10001,
+  "title": "Has Minecraft Actually Gotten Worse?",
+  "author": "Diego",
+  "body": "I'm being serious. And I think that someone had to say it! Minecraft isn't what it used to, and frankly, I think it has gotten worse over the years and many updates. Here's why: 1. The updates don't make sense, 2. Creepers still exist, 3. Mojang can't even remove one 'Herobrine'. Clearly, there are many problems plaguing the game, that many updates have not addressed and I am getting sick of it! ",
+  "tags": [
+    "Hater",
+    "Advice",
+    "Q&A"
+  ],
+  "replies": 3,
+  "likes": 3,
+  "dislikes": 21,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+},
+{
+  "_id": {
+    "$oid": "65e821b3c2ac7b2daadc91a8"
+  },
+  "id": 10002,
+  "title": "Why are creepers so hated??",
+  "author": "Creeper",
+  "body": "Aw Man! So I was in this mine, right? I saw this guy swinging his pickaxe side to side. That task seemed like a grueling one, so I at least want to help him find some diamonds tonight. Then he turned his head up when I made a sound that made him turn around and look up. Total shock seemed to fill his body. Then he said, \"Oh, no, it's you again. I can never forget those eyes.\" 'Cause, baby, tonight I had enough of hearin' \"The creeper's tryna steal all our stuff again!\" 'Cause, baby, tonight, I'll make you grab your pick, shovel, and bolt again. Gonna make you run until its done until the sun comes up in the morn'.",
+  "tags": [
+    "Question",
+    "Q&A"
+  ],
+  "replies": 2,
+  "likes": 3,
+  "dislikes": 0,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/creeper.png"
+},
+{
+  "_id": {
+    "$oid": "65e821b3c2ac7b2daadc91a9"
+  },
+  "id": 10003,
+  "title": "I think I saw Herobrine in my minecraft world!!!",
+  "author": "Steve",
+  "body": "I was playing minecraft in Gokongwei room 304B all alone. All of a sudden, I got a in-game text message. Saying Herobrine joined my game! His minecraft skin looked different though, it looked like Sir Lu!",
+  "tags": [
+    "Creepypasta",
+    "Horror"
+  ],
+  "replies": 1,
+  "likes": 10,
+  "dislikes": 3,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/steve.png"
+},
+{
+  "_id": {
+    "$oid": "65e821b3c2ac7b2daadc91aa"
+  },
+  "id": 10004,
+  "title": "Just met up with Herobrine today",
+  "author": "Zombie",
+  "body": "He told me his secret, his real name is Louis Patrice Lu!",
+  "tags": [
+    "Chill",
+    "Cool"
+  ],
+  "likes": 1000,
+  "dislikes": 1,
+  "replies": 0,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/zombie.png"
+},
+{
+  "_id": {
+    "$oid": "65e821b3c2ac7b2daadc91ab"
+  },
+  "id": 10005,
+  "title": "Yooo this is my first post",
+  "author": "Enderman",
+  "body": "I'm an early minecraft fan, and I am particularly interested in the modding community. Check out Valkyrian Skies!",
+  "tags": [],
+  "replies": 0,
+  "likes": 0,
+  "dislikes": 0,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/enderman.png"
+}]

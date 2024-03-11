@@ -1,0 +1,28 @@
+<div class="container d-flex flex-column justify-content-center mc-font">
+    <div class="pt-5 d-flex justify-content-center"><img class="w-200" src="../images/grass_block.png" /></div>
+    <h1 class="pl-1 mc-font display-1 font-weight-bold text-center text-white">UMF</h1>
+    <h5 class="mc-font font-weight-bold text-center text-white">Ultimate Minecraft Forum</h5>  
+    
+    <h6 class="mc-font text-white text-center pt-3"><u>Login</u></h6>
+    {{#if errorMsg}}
+    <div class="d-flex flex-row justify-content-center my-auto">
+        <div class="mc-font alert alert-danger sm-text p-2 my-auto" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2 mt-2 my-auto"></i><b class="my-auto">{{errorMsg}}</b>
+        </div>
+    </div>
+    {{/if}}
+    <form class="d-flex flex-column mx-auto" action="/Home/" method="post" name="login">
+        <input type="text" class="mt-2" placeholder="Username" name="user">
+        <input type="password" class="mt-2" placeholder="Password" id="password" name="pass">
+        <span class="mc-font text-white text-center small p-2"><input class="m-2" type="checkbox" id="passtoggle" onclick="showPass()">Show password</span>
+        <div class="mx-auto pb-2">
+            <input type="submit" class="mc-font btn btn-success btn-sm" value="Login">
+        </div>
+    </form>
+
+    <form class="d-flex flex-column mx-auto" action="/register">
+        <h5 class="mc-font text-white small text-center"><small>No Account yet?</small></h5>
+        <input type="submit" class="mc-font btn btn-success btn-sm" value="Create Account">
+    </form>
+    
+</div>

@@ -1,6 +1,6 @@
 //Install Command:
 //npm init
-//npm i express express-handlebars body-parser
+//npm i express express-handlebars body-parser mongoose
 const express = require('express');
 const server = express();
 
@@ -12,7 +12,9 @@ const handlebars = require('express-handlebars');
 server.set('view engine', 'hbs');
 server.engine('hbs', handlebars.engine({
     extname: 'hbs',
+    helpers: require('./public/javascript/handlebars-helpers')
 }));
+
 
 server.use(express.static('public'));
 
@@ -20,8 +22,8 @@ server.use(express.static('public'));
 //with the rest of the system.
 const controllers = ['routes'];
 for(var i=0; i<controllers.length; i++){
-  const model = require('./controllers/'+controllers[i]);
-  model.add(server);
+  const ctrl = require('./controllers/'+controllers[i]);
+  ctrl.add(server);
 }
 
 const port = process.env.PORT | 9090;

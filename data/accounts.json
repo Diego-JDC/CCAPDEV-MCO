@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "65e82152c2ac7b2daadc919a"
+  },
+  "username": "Diego",
+  "password": "pass1",
+  "bio": "Professional Minecraft Hater. No, I'm not trolling!! I really don't like Minecraft!!!",
+  "profile-pic": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+  "loggedIn": true
+},
+{
+  "_id": {
+    "$oid": "65e82152c2ac7b2daadc919b"
+  },
+  "username": "Creeper",
+  "password": "pass2",
+  "bio": "Totally 1000% legit Minecraft gamer",
+  "profile-pic": "/images/creeper.png",
+  "loggedIn": false
+},
+{
+  "_id": {
+    "$oid": "65e82152c2ac7b2daadc919c"
+  },
+  "username": "Steve",
+  "password": "pass3",
+  "bio": "Slightly unhinged Minecraft RPer",
+  "profile-pic": "/images/steve.png",
+  "loggedIn": false
+},
+{
+  "_id": {
+    "$oid": "65e82152c2ac7b2daadc919d"
+  },
+  "username": "Zombie",
+  "password": "pass4",
+  "bio": "MC newbie, pls treat me well",
+  "profile-pic": "/images/zombie.png",
+  "loggedIn": false
+},
+{
+  "_id": {
+    "$oid": "65e82152c2ac7b2daadc919e"
+  },
+  "username": "Enderman",
+  "password": "pass5",
+  "bio": "Pro block holder and sometimes placer",
+  "profile-pic": "/images/enderman.png",
+  "loggedIn": false
+}]

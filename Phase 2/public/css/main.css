@@ -174,6 +174,10 @@
 /* -------------- */
 
 /* start of Post Page CSS */
+.sm-text {
+    font-size: 0.90rem;
+}
+
 .test {
     color: white;
     font-size: 50px;
@@ -219,6 +223,40 @@
     height: 100em;
     
 }
+
+.sm-height {
+    min-height: 1rem;
+}
+
+.sm-width {
+    min-width: 8rem;
+}
+
+.mw-50 {
+    max-width: 50%;
+}
+
+.mid-width {
+    min-width: 10rem;
+}
+.overflow-y-init {
+    overflow-y: initial;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+.black-bg{
+    background-color: black;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.card-body {
+    width: 10rem;
+}
+
 .gray-concrete-bg {
     background-size: 5em;
     background-image: url("../images/Gray_Concrete.png");

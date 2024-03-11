@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "65e8216bc2ac7b2daadc91a0"
+  },
+  "ID": 20001,
+  "postID": 10001,
+  "author": "Creeper",
+  "content": "Yoo wtf why are you so mean to me :<",
+  "likes": 19,
+  "dislikes": 2,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/creeper.png",
+  "replies": [
+    {
+      "$oid": "65e8216bc2ac7b2daadc91a1"
+    }
+  ],
+  "ndate": ""
+},
+{
+  "_id": {
+    "$oid": "65e8216bc2ac7b2daadc91a1"
+  },
+  "ID": 20002,
+  "postID": 10001,
+  "author": "Enderman",
+  "content": "Ayo true why are we dissing my boy here?",
+  "likes": 3,
+  "dislikes": 0,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/enderman.png",
+  "parentComment": {
+    "$oid": "65e8216bc2ac7b2daadc91a0"
+  },
+  "replies": [],
+  "ndate": ""
+},
+{
+  "_id": {
+    "$oid": "65e8216bc2ac7b2daadc91a2"
+  },
+  "ID": 20003,
+  "postID": 10001,
+  "author": "Zombie",
+  "content": "I do agree, there are suddenly more variants of myself and I don't like em at all :/",
+  "likes": 5,
+  "dislikes": 8,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/zombie.png",
+  "replies": [],
+  "ndate": ""
+},
+{
+  "_id": {
+    "$oid": "65e8216bc2ac7b2daadc91a3"
+  },
+  "ID": 20004,
+  "postID": 10002,
+  "author": "Steve",
+  "content": "You're not stealing my stuff again!",
+  "likes": 4,
+  "dislikes": 0,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/steve.png",
+  "replies": [],
+  "ndate": ""
+},
+{
+  "_id": {
+    "$oid": "65e8216bc2ac7b2daadc91a4"
+  },
+  "ID": 20005,
+  "postID": 10002,
+  "author": "Zombie",
+  "content": "If I help you steal this guy's stuff do I get a cut of the loot???",
+  "likes": 7,
+  "dislikes": 7,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "/images/zombie.png",
+  "replies": [],
+  "ndate": ""
+},
+{
+  "_id": {
+    "$oid": "65e8216bc2ac7b2daadc91a5"
+  },
+  "ID": 20006,
+  "postID": 10003,
+  "author": "Diego",
+  "content": "Yea he's p vibes tbh",
+  "likes": 4,
+  "dislikes": 0,
+  "date": {
+    "$date": "2023-12-31T16:00:00.000Z"
+  },
+  "profile-pic": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+  "replies": [],
+  "ndate": ""
+}]

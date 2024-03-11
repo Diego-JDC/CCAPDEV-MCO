@@ -1,0 +1,40 @@
+{{> navbar}}
+<div class="mc-font top-spacer d-flex justify-content-center">
+    
+    <div class="d-flex flex-column bg-success rounded-5 w-50">
+        <div class="mx-4 mt-3">
+            <p class="text-white fs-2"><b>Edit Post</b></p>
+        </div>
+        <div class="d-flex flex-column p-2">
+            <div class="px-3 mx-2">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Post Title" value="{{post-data.title}}">
+                    <label for="floatingInputGroup1">Post Title</label>
+                </div>
+            </div>                   
+            <div class = "text-white p-3 mx-auto">
+                <textarea rows="5" cols="70" placeholder="Post Content">{{post-data.body}}</textarea>
+            </div>
+        </div>
+        <div class="text-white d-flex flex-row flex-wrap mx-4 mb-3">
+            <p class="fs-4 my-auto"><b>Tags: </b></p>
+            <div class="mx-2 d-flex flex-row">
+                {{#each post-data.tags}}
+                    <button type="button" class="p-1 ms-2 btn btn-outline-warning active" data-bs-toggle="button">{{this}}</button>
+                {{/each}}
+                <div class="w-25 ms-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Tag" aria-label="Add Tag">
+                        <button class="btn btn-outline-warning" type="button">Add Tag</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex m-4 justify-content-center">
+            <div class="d-flex flex-column w-25">
+                <a href="/posts/{{post-data.id}}/" class="btn btn-primary border-info">Submit</a>
+                <a href="/posts/{{post-data.id}}/" class="btn btn-danger mt-1">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
