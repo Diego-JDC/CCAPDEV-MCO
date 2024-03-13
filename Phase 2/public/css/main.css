@@ -165,7 +165,7 @@
 
 .dark-oak-bg {
     background-size: 5em;
-    background-image: url("../images/dark_oak_plank.png");
+    background-image: url("../images/Birch_Planks.png");
     background-repeat: repeat;
     height: 100em;
 }
@@ -290,7 +290,11 @@
     background-image: url("../images/stone_brick.png");
     background-repeat: repeat;
 }
-
+.log {
+    background-size: 5em;
+    background-image: url("../images/sidelog.png");
+    background-repeat: repeat;
+}
 .pfp {
     max-width: 30px;
     border-radius: 50%;

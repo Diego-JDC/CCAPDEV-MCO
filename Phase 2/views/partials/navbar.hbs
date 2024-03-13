@@ -24,3 +24,13 @@
         </div>
     </div>
 </nav>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        var nav = document.querySelector('nav');
+        if (window.location.pathname.includes('/users/')) {
+            nav.classList.remove('stone-brick-bg');
+            nav.classList.add('log');
+        }
+    });
+</script>
