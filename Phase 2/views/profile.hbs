@@ -13,7 +13,7 @@
                     <div class = "input-shadow p-3 mb-2 rounded-5">
                         <label class="mc-font">{{account-data.bio}}</label>
                     </div>
-                    {{#if account-data.loggedIn}}
+                    {{#if can-edit}}
                     <div class="d-flex justify-content-end my-auto">
                         <form action="/users/{{account-data.username}}/edit">
                             <input class="btn btn-success mx-2" type="submit" value="Edit Profile">

@@ -1,6 +1,7 @@
 //Routes
 const responder = require('../models/Responder');
 
+// I DON"T THINK WE NEED THIS ANYMORE BUT I'LL JUST KEEP THIS HERE FOR NOW
 function convertDate(data) {
   for(let i=0; i<data.length; i++) {
     let oDate = new Date();
@@ -10,6 +11,13 @@ function convertDate(data) {
 }
 module.exports.convertDate = convertDate;
 
+const loggedUser = 'Diego'; // hardcoded 'loggedIn' user
+let hardCodeUser = { username: loggedUser };
+let currentlyLoggedUser = null;
+responder.accountModel.findOne(hardCodeUser).lean().then(function(user){
+  currentlyLoggedUser = user;
+}).catch(responder.errorFn);
+module.exports.loggedUser = loggedUser;
 
 function add(server){
 
@@ -20,7 +28,8 @@ function add(server){
       resp.render('main',{
         layout      : 'index',
         title       : 'Forum Home',
-        'post-data' : post_data
+        'post-data' : post_data,
+        'logged-user': currentlyLoggedUser
       });
     }).catch(responder.errorFn);
   });
@@ -40,7 +49,8 @@ function add(server){
             resp.render('main',{
               layout      : 'index',
               title       : 'Forum Home',
-              'post-data' : post_data
+              'post-data' : post_data,
+              'logged-user': currentlyLoggedUser
             });
           //user is found, but password is incorrect.
           } else {
@@ -67,7 +77,8 @@ function add(server){
   server.get('/create-post', function (req, resp){
     resp.render('create_post',{
       layout: 'index',
-      title : 'Create Post'
+      title : 'Create Post',
+      'logged-user': currentlyLoggedUser
     });
   });
   
@@ -75,7 +86,8 @@ function add(server){
   server.get('/profile', function (req, resp){
     resp.render('profile',{
       layout: 'profile',
-      title : 'Profile'
+      title : 'Profile',
+      'logged-user': currentlyLoggedUser
     });
   });
 
@@ -83,13 +95,17 @@ function add(server){
     let userQuery = { username: req.params.username };
     let postQuery = { author: req.params.username};
 
+
+
     responder.accountModel.findOne(userQuery).lean().then(function(account_data) {
       responder.postModel.find(postQuery).lean().then(function (post_data) {
         resp.render('profile',{
           layout        : 'profile',
           title         : account_data.username + '\'s Profile' ,
           'account-data': account_data,
-          posts         : post_data
+          posts         : post_data,
+          'logged-user' : currentlyLoggedUser,
+          'can-edit'    : (account_data.username == loggedUser)
         });
       }).catch(responder.errorFn);
     }).catch(responder.errorFn);
@@ -113,16 +129,29 @@ function add(server){
   server.get('/posts/:postid', function (req, resp){
     let postQuery = { id : req.params.postid };
     let commentQuery = { postID : req.params.postid };
-    let userQuery = { username : 'Diego' }; // TEMPORARY: Diego is assumed to be the 'logged in' user.
+
     responder.postModel.findOne(postQuery).lean().then(function(post_data){
       responder.commentModel.find(commentQuery).lean().then(function(comment_data) {
-        responder.accountModel.findOne(userQuery).lean().then(function(user){
-          post_data.loggedIn = (post_data.author == user.username);
+        //responder.accountModel.findOne(userQuery).lean().then(function(user){
+          post_data.loggedIn = (post_data.author == loggedUser);
           for(comment of comment_data){
-            if(comment.author == user.username){
-              comment.loggedIn = true;
+            if(comment.replies != null) {
+              for(reply of comment.replies){
+                if (reply.author == loggedUser) {
+                  reply.edit = true;
+                } else {
+                  reply.edit = false;
+                }
+              }
+            }
+            if(comment.author == loggedUser) {
+              comment.edit = true;
+            } else {
+              comment.edit = false;
             }
           }
+          console.log(comment_data);
+          //console.log(comment_data[0].replies);
           post_data.ndate = post_data.date.toDateString();
           convertDate(comment_data);
           resp.render('post',{
@@ -131,21 +160,22 @@ function add(server){
             'post-data'     : post_data,
             'comment-data'  : comment_data,
             postLogged      : post_data.loggedIn,
+            'logged-user'   : currentlyLoggedUser,
           });
-        }).catch(responder.errorFn); // diego(user)Query end
+        //}).catch(responder.errorFn); // diego(user)Query end
       }).catch(responder.errorFn); // commentQuery end
     }).catch(responder.errorFn); // postQuery end
   });
 
   server.get('/posts/:postid/edit', function (req, resp){
     let postQuery = { id : req.params.postid };
-    let loggedUser = 'Diego'; // TEMPORARY: Diego is assumed to be the 'logged in' user.
     responder.postModel.findOne(postQuery).lean().then(function(post_data){
       if(post_data.author == loggedUser) {
         resp.render('edit_post',{
           layout      : 'index',
           title       : 'Edit Post',
-          'post-data' : post_data
+          'post-data' : post_data,
+          'logged-user': currentlyLoggedUser
         });
       }else{
         resp.render('error',{
@@ -160,13 +190,13 @@ function add(server){
   // I don't think this is safe...LOL
   server.get('/users/:user/edit', function (req, resp){
     let userQuery = { username: req.params.user };
-    let loggedUser = 'Diego'; // TEMPORARY: Diego is assumed to be the 'logged in' user.
     responder.accountModel.findOne(userQuery).lean().then(function(account_data){
       if(req.params.user == loggedUser){
         resp.render('profile_edit',{
           layout        : 'profile',
           title         : 'Edit Profile',
-          'account-data': account_data
+          'account-data': account_data,
+          'logged-user': currentlyLoggedUser
         });
       }else{
         resp.render('error',{
