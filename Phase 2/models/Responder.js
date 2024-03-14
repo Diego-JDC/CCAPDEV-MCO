@@ -45,17 +45,14 @@ const commentSchema = new mongoose.Schema({
     replies: [{ type: Schema.Types.ObjectID, ref: 'comment' }],
     ndate: { type: String }
 },{ versionKey: false });
-commentSchema.pre("save", function (next){
-    var i = this;
-    i.ndate(i.date.toDateString());
-    next();
-});
+/*
 commentSchema.pre("find", function (next){
     this.populate({path:"replies",
         populate:{path:"author"}
     });
     next();
 });
+*/
 const commentModel = mongoose.model('comment', commentSchema);
 module.exports.commentModel = commentModel;
 

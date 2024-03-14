@@ -32,11 +32,19 @@ npm i express express-handlebars body-parser mongoose
 ![database-structure](https://github.com/Diego-JDC/CCAPDEV-MCO/assets/98803337/5586aab8-d16b-4940-a0a9-a47f8fb2edec)
 ### 4. In each collection, add data and select 'Import JSON or CSV file'
 ![add-data](https://github.com/Diego-JDC/CCAPDEV-MCO/assets/98803337/3785022a-8952-4195-9cb2-27d8a368b3d9)
-### Choose the .json file found in the /data folder that matches the name of the collection and repeat for each collection.
+### Choose the .json file found in /Phase 2/models/data folder that matches the name of the collection and repeat for each collection.
 
 ### For reference, your mongoDB database should look like this after following the steps above:
 ![image](https://github.com/Diego-JDC/CCAPDEV-MCO/assets/98803337/560254d0-7b5e-4142-9048-a001f3e9c6d1)
-
+### 5. Run the app.js file via terminal (or cmd)
+```console
+node app.js
+```
+### 6. Go to the url on your browser:
+```
+localhost:3000
+```
+__NOTE__: On your terminal, you should have seen the message 'Listening at Port 3000' This means you successfully followed the steps thus far.
 ## Troubleshooting
 ### If There are too little/too much documents in a specific collection:
 - Drop that collection and create it again.

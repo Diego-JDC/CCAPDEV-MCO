@@ -8,9 +8,9 @@
     <div class="flex-grow-1 ms-3 flex-column">
         <div class="d-flex flex-row pb-2 my-auto">
             <h4 class="my-auto"><b>{{author}}</b></h4><p class="sm-text ps-3 my-auto">{{formatDate date}}</p>
-            {{#if this.loggedIn}}
+            {{#if edit}}
             <div class="btn-group text-white">
-                <button href="#" class="btn btn-sm btn-outline-secondary ms-2 text-white h3" type="button" data-bs-toggle="collapse" data-bs-target="#edit{{ID}}" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-pencil-square"></i></a>
+                <button href="#" class="btn btn-sm btn-outline-secondary ms-2 text-white h3" type="button" data-bs-toggle="collapse" data-bs-target="#edit{{ID}}" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-pencil-square"></i></button>
                 <button class="btn btn-sm btn-outline-secondary text-white h3" type="button" data-bs-toggle="collapse" data-bs-target="#delete{{ID}}" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-trash3-fill"></i></button>
             </div>
             <div class="sm-height collapse collapse-horizontal inline-block ms-2" id="delete{{ID}}">
@@ -30,7 +30,7 @@
         <div class="collapse" id="edit{{ID}}">
             <div class="d-flex">
                 <div class="mb-2">
-                    <textarea required class="reply-textarea" name="replyText" rows="3" cols="30"  placeholder = 'Update Reply'>{{content}}</textarea>
+                    <textarea name="replyText" rows="3" cols="30"  placeholder = 'Edit Comment'>{{content}}</textarea>
                     <div class = "action-btns">
                         <button class="btn btn-success" type="submit"> Update </button>
                         <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#edit{{ID}}" aria-expanded="false" aria-controls="collapseExample"> Cancel </button>
@@ -59,7 +59,7 @@
             <div class="collapse" id="comment{{ID}}">
                 <div class="d-flex">
                     <div class="bg-secondary p-2 rounded">
-                        <textarea required class="reply-textarea" name="replyText" rows="5" cols="50"  placeholder = 'Enter your reply'></textarea>
+                        <textarea name="replyText" rows="5" cols="50"  placeholder = 'Enter your reply'></textarea>
                         <div class = "action-btns">
                             <button class="btn btn-success" type="submit"> Submit </button>
                             <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#comment{{ID}}" aria-expanded="false" aria-controls="collapseExample"> Cancel </button>

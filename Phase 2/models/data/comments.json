@@ -14,7 +14,22 @@
   "profile-pic": "/images/creeper.png",
   "replies": [
     {
-      "$oid": "65e8216bc2ac7b2daadc91a1"
+      "ID": 20002,
+      "author": "Enderman",
+      "content": "Ayo true why are we dissing my boy here?",
+      "date": {
+        "$date": "2023-12-31T16:00:00.000Z"
+      },
+      "dislikes": 0,
+      "likes": 3,
+      "parentComment": {
+        "$oid": "65e8216bc2ac7b2daadc91a0"
+      },
+      "postID": 10001,
+      "replies": [
+        ""
+      ],
+      "profile-pic": "/images/enderman.png"
     }
   ],
   "ndate": ""
