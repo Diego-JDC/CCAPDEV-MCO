@@ -36,7 +36,15 @@ npm i express express-handlebars body-parser mongoose
 
 ### For reference, your mongoDB database should look like this after following the steps above:
 ![image](https://github.com/Diego-JDC/CCAPDEV-MCO/assets/98803337/560254d0-7b5e-4142-9048-a001f3e9c6d1)
-
+### 5. Run the app.js file via terminal (or cmd)
+```console
+node app.js
+```
+### 6. Go to the url on your browser:
+```
+localhost:3000
+```
+__NOTE__: On your terminal, you should have seen the message 'Listening at Port 3000' This means you successfully followed the steps thus far.
 ## Troubleshooting
 ### If There are too little/too much documents in a specific collection:
 - Drop that collection and create it again.
