@@ -223,6 +223,69 @@
     height: 100em;
     
 }
+#showPopularPostButton {
+    border: none;
+    transition: transform 0.1s ease-in-out;
+}
+
+#showPopularPostButton:active {
+    transform: translateY(15px);
+}
+
+#popularPostid {
+    position: absolute;
+    right: 0;
+}
+
+.testChain{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/Testhanging2.png");
+    width: 100%;
+    height: 100px;
+}
+.pull-chain {
+    position: absolute;
+    top: 0px;
+    left: 2%;
+    height: 390px;
+    width: 65px;
+    z-index: 99;
+    background-image: url("../images/1chain.png");
+    background-color: transparent;
+}
+
+.hanging-sign {
+    position: absolute;
+    top: 0px;
+    right: 0.1%;
+    height: 500px;
+    width: 500px;
+    z-index: 99;
+}
+.hanging-sign-1 {
+    flex-direction: column;
+    margin-top: 100px;
+    
+}
+.hanging-sign-1 > img{
+    width: 80%;
+}
+
+.hanging-sign-2 {
+    background-image: url("../images/hangingsign.png");
+    margin-left: 20px;
+    width: 400px;
+}
+
+.border-bottom-black {
+    background-color:rgba(0, 0, 0, 0.032);
+}
+
+.redirect {
+    text-decoration: none;
+    color: black;
+}
 
 .sm-height {
     min-height: 1rem;

@@ -1,0 +1,32 @@
+<div id="popularPostid" class="flex-row hanging-sign">
+    <div class = "mc-font flex-column">
+        <div class = "hanging-sign-1">
+            <div class="d-flex flex-row">
+                <div>
+                    <img src = "/images/Testhanging2.png">
+                </div>
+                <div>
+                    <img src = "/images/extension.png">
+                </div>
+            </div>
+            <div class="flex-column">
+        <div class = "hanging-sign-2 p-2 ml-2" style="height: 245px;">
+            <p class="fs-3 mb-0"><b>Popular Posts</b></p>
+            {{#each post-data}}
+                {{#if (or (gte likes 100) (gte dislikes 20))}}
+                    <div class = "border-bottom-black m-0">
+                        <a class ="redirect" href="/posts/{{id}}">
+                        <p><b>{{title}}</b></p>
+                        <p>{{truncate body 45}}</p>
+                    </div>
+                    </a>
+                {{/if}}
+            {{/each}}
+
+        </div>
+        </div>
+        
+    </div>
+
+</div>
+

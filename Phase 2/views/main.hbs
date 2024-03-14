@@ -1,36 +1,44 @@
 {{> navbar}}
 <div class="mc-font top-spacer d-flex justify-content-center pt-5">
-    <div class="flex-column">
-        <a href="create-post" class="btn btn-success mb-2">Create Post</a>
+        
+        <div class="flex-column">
+            <a href="create-post" class="btn btn-success mb-2">Create Post</a>
 
-        {{#each post-data}}
-        <div class="mb-3 post-sizing d-flex flex-row">
-            <div class="profile-section d-flex flex-column stone-brick-bg slink">
-                <img class="pfp-l m-3 text-center" src="{{profile-pic}}"/>
-                <p class="text-center text-white fs-5">{{author}}</p>
-                <p class="text-center text-white sm-text pt-5">Posted<br>{{ndate}}</p>
-                <a href="/users/{{author}}" class="stretched-link"></a>
+            {{#each post-data}}
+            <div class="mb-3 post-sizing d-flex flex-row">
+                <div class="profile-section d-flex flex-column stone-brick-bg slink">
+                    <img class="pfp-l m-3 text-center" src="{{profile-pic}}"/>
+                    <p class="text-center text-white fs-5">{{author}}</p>
+                    <p class="text-center text-white sm-text pt-5">Posted<br>{{ndate}}</p>
+                    <a href="/users/{{author}}" class="stretched-link"></a>
+                </div>
+                <div class="post-body d-flex flex-column bg-dark container-fluid slink">
+                    <p class="text-white fs-2 m-3 "><b>{{title}}</b></p>
+                    <div class="d-flex flex-row m-3">
+                        <p class="me-3 text-white"><i class="bi bi-chat-left-text-fill me-2 text-white"></i>{{replies}} Replies</p>  
+                        <i class="bi bi-hand-thumbs-up-fill me-2 text-success"></i><p class="text-white me-3"></i>{{likes}} Likes</p>  
+                        <i class="bi bi-hand-thumbs-down-fill text-danger me-2"></i><p class="text-white">{{dislikes}} Dislikes</p>
+                    </div>
+                    <div class="post-tags d-flex flex-row ms-3">
+                        {{#each tags}}
+                        <p class="mx-1 p-1 border border-warning bg-warning-subtle text-dark">{{this}}</p>
+                        {{/each}}
+                    </div>
+                    <div class="d-flex flex-column justify-content-end align-self-end">
+                        <a class="btn btn-success btn-sm m-2 stretched-link" href="/posts/{{id}}">View Thread</a>
+                    </div>
+                </div>
             </div>
-            <div class="post-body d-flex flex-column bg-dark container-fluid slink">
-                <p class="text-white fs-2 m-3 "><b>{{title}}</b></p>
-                <div class="d-flex flex-row m-3">
-                    <p class="me-3 text-white"><i class="bi bi-chat-left-text-fill me-2 text-white"></i>{{replies}} Replies</p>  
-                    <i class="bi bi-hand-thumbs-up-fill me-2 text-success"></i><p class="text-white me-3"></i>{{likes}} Likes</p>  
-                    <i class="bi bi-hand-thumbs-down-fill text-danger me-2"></i><p class="text-white">{{dislikes}} Dislikes</p>
-                </div>
-                <div class="post-tags d-flex flex-row ms-3">
-                    {{#each tags}}
-                    <p class="mx-1 p-1 border border-warning bg-warning-subtle text-dark">{{this}}</p>
-                    {{/each}}
-                </div>
-                <div class="d-flex flex-column justify-content-end align-self-end">
-                    <a class="btn btn-success btn-sm m-2 stretched-link" href="/posts/{{id}}">View Thread</a>
-                </div>
-            </div>
+            {{/each}}
+
         </div>
-        {{/each}}
 
-    </div>
-    
-    
 </div>
+<button id="showPopularPostButton" class="pull-chain mb-2"></button>
+{{> popularPost}}
+
+
+
+
+
+
